@@ -13,6 +13,7 @@
 		4D24E5BC258E2DB600B78E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D24E5BA258E2DB600B78E6F /* Main.storyboard */; };
 		4D24E5BE258E2DB600B78E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D24E5BD258E2DB600B78E6F /* Assets.xcassets */; };
 		4D24E5C1258E2DB600B78E6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D24E5BF258E2DB600B78E6F /* LaunchScreen.storyboard */; };
+		4D24E5CB258E2F9400B78E6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5CA258E2F9400B78E6F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4D24E5BD258E2DB600B78E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D24E5C0258E2DB600B78E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D24E5C2258E2DB600B78E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D24E5CA258E2F9400B78E6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		4D24E5B3258E2DB600B78E6F /* FirebaseMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				4D24E5C9258E2F3000B78E6F /* Utils */,
 				4D24E5B4258E2DB600B78E6F /* AppDelegate.swift */,
 				4D24E5B6258E2DB600B78E6F /* SceneDelegate.swift */,
 				4D24E5B8258E2DB600B78E6F /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				4D24E5C2258E2DB600B78E6F /* Info.plist */,
 			);
 			path = FirebaseMessenger;
+			sourceTree = "<group>";
+		};
+		4D24E5C9258E2F3000B78E6F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4D24E5CA258E2F9400B78E6F /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 				4D24E5B9258E2DB600B78E6F /* ViewController.swift in Sources */,
 				4D24E5B5258E2DB600B78E6F /* AppDelegate.swift in Sources */,
 				4D24E5B7258E2DB600B78E6F /* SceneDelegate.swift in Sources */,
+				4D24E5CB258E2F9400B78E6F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
