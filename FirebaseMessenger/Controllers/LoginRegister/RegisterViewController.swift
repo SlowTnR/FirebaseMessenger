@@ -19,12 +19,12 @@ class RegisterViewController: UIViewController {
     
     private let imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "person")
+        imageView.image = UIImage(systemName: "person.circle")
         imageView.tintColor = .gray
         imageView.contentMode = .scaleAspectFit
         imageView.layer.masksToBounds = true
-        imageView.layer.borderWidth = 2
-        imageView.layer.borderColor = UIColor.lightGray.cgColor
+//        imageView.layer.borderWidth = 2
+//        imageView.layer.borderColor = UIColor.lightGray.cgColor
         
         return imageView
     }()
@@ -57,7 +57,7 @@ class RegisterViewController: UIViewController {
         field.layer.borderWidth = 1
         field.layer.borderColor = UIColor.lightGray.cgColor
         field.placeholder = "Enter Password"
-        field.isSecureTextEntry = true 
+        field.isSecureTextEntry = true
         
         
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
@@ -198,22 +198,32 @@ class RegisterViewController: UIViewController {
         
         // Firebase Sign Up
         
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {authResult, error in
-            guard let result = authResult, error == nil else {
-                print("Error creating user")
+        DatabaseManager.shared.userExists(with: email, completion: { [weak self] exists in
+            guard let strongSelf = self else {return}
+            guard !exists else {
+                //user already exists
+                strongSelf.alertUserSignupError(message: "User already exists. Create new user with another email.")
                 return
             }
             
-            let user = result.user
-            print("User \(user) created")
             
-
+            FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {authResult, error in
+                
+                guard  authResult != nil, error == nil else {
+                    print("Error creating user")
+                    return
+                }
+                
+                DatabaseManager.shared.insertuser(with: ChatAppUser(firstName: firstName, lastName: lastName, emailAddress: email))
+                
+                strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+                
+            })
         })
-        
     }
     
-    func alertUserSignupError(){
-        let alert = UIAlertController(title: "Something went wrong", message: "Please enter information", preferredStyle: .alert)
+    func alertUserSignupError(message: String = "Error with creating user."){
+        let alert = UIAlertController(title: "Something went wrong", message: message, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
         
