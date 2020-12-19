@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
     
@@ -56,7 +57,7 @@ class RegisterViewController: UIViewController {
         field.layer.borderWidth = 1
         field.layer.borderColor = UIColor.lightGray.cgColor
         field.placeholder = "Enter Password"
-        field.isSecureTextEntry = false // change for true after
+        field.isSecureTextEntry = true 
         
         
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
@@ -118,6 +119,9 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         title = "Register"
         view.backgroundColor = .white
+        
+        
+        
         
         //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register", style: .done, target: self, action: #selector(didTapRegister))
         
@@ -193,6 +197,18 @@ class RegisterViewController: UIViewController {
         }
         
         // Firebase Sign Up
+        
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {authResult, error in
+            guard let result = authResult, error == nil else {
+                print("Error creating user")
+                return
+            }
+            
+            let user = result.user
+            print("User \(user) created")
+            
+
+        })
         
     }
     
