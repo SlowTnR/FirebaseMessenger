@@ -9,23 +9,35 @@
 /* Begin PBXBuildFile section */
 		4D24E5B5258E2DB600B78E6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5B4258E2DB600B78E6F /* AppDelegate.swift */; };
 		4D24E5B7258E2DB600B78E6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5B6258E2DB600B78E6F /* SceneDelegate.swift */; };
-		4D24E5B9258E2DB600B78E6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5B8258E2DB600B78E6F /* ViewController.swift */; };
+		4D24E5B9258E2DB600B78E6F /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5B8258E2DB600B78E6F /* ConversationsViewController.swift */; };
 		4D24E5BC258E2DB600B78E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D24E5BA258E2DB600B78E6F /* Main.storyboard */; };
 		4D24E5BE258E2DB600B78E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D24E5BD258E2DB600B78E6F /* Assets.xcassets */; };
 		4D24E5C1258E2DB600B78E6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D24E5BF258E2DB600B78E6F /* LaunchScreen.storyboard */; };
 		4D24E5CB258E2F9400B78E6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5CA258E2F9400B78E6F /* Constants.swift */; };
+		4D24E5D5258E32CD00B78E6F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5D4258E32CD00B78E6F /* LoginViewController.swift */; };
+		4D24E5D8258E32DD00B78E6F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5D7258E32DD00B78E6F /* RegisterViewController.swift */; };
+		4D24E5DB258E330E00B78E6F /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5DA258E330E00B78E6F /* PhotoViewerViewController.swift */; };
+		4D24E5DE258E331600B78E6F /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5DD258E331600B78E6F /* VideoPlayerViewController.swift */; };
+		4D24E5E1258E334500B78E6F /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5E0258E334500B78E6F /* NewConversationViewController.swift */; };
+		4D24E5E4258E335700B78E6F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5E3258E335700B78E6F /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D24E5B1258E2DB600B78E6F /* FirebaseMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D24E5B4258E2DB600B78E6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D24E5B6258E2DB600B78E6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D24E5B8258E2DB600B78E6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D24E5B8258E2DB600B78E6F /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		4D24E5BB258E2DB600B78E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D24E5BD258E2DB600B78E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D24E5C0258E2DB600B78E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D24E5C2258E2DB600B78E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D24E5CA258E2F9400B78E6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4D24E5D4258E32CD00B78E6F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4D24E5D7258E32DD00B78E6F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4D24E5DA258E330E00B78E6F /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
+		4D24E5DD258E331600B78E6F /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		4D24E5E0258E334500B78E6F /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		4D24E5E3258E335700B78E6F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,12 @@
 		4D24E5B3258E2DB600B78E6F /* FirebaseMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				4D24E5D1258E317400B78E6F /* Resources */,
+				4D24E5D0258E316800B78E6F /* ViewModels */,
+				4D24E5CF258E316200B78E6F /* Models */,
+				4D24E5CE258E315600B78E6F /* Views */,
+				4D24E5CD258E314C00B78E6F /* Controllers */,
 				4D24E5C9258E2F3000B78E6F /* Utils */,
-				4D24E5B4258E2DB600B78E6F /* AppDelegate.swift */,
-				4D24E5B6258E2DB600B78E6F /* SceneDelegate.swift */,
-				4D24E5B8258E2DB600B78E6F /* ViewController.swift */,
-				4D24E5BA258E2DB600B78E6F /* Main.storyboard */,
-				4D24E5BD258E2DB600B78E6F /* Assets.xcassets */,
-				4D24E5BF258E2DB600B78E6F /* LaunchScreen.storyboard */,
 				4D24E5C2258E2DB600B78E6F /* Info.plist */,
 			);
 			path = FirebaseMessenger;
@@ -76,6 +87,61 @@
 				4D24E5CA258E2F9400B78E6F /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		4D24E5CD258E314C00B78E6F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D24E5B8258E2DB600B78E6F /* ConversationsViewController.swift */,
+				4D24E5D4258E32CD00B78E6F /* LoginViewController.swift */,
+				4D24E5D7258E32DD00B78E6F /* RegisterViewController.swift */,
+				4D24E5DA258E330E00B78E6F /* PhotoViewerViewController.swift */,
+				4D24E5DD258E331600B78E6F /* VideoPlayerViewController.swift */,
+				4D24E5E0258E334500B78E6F /* NewConversationViewController.swift */,
+				4D24E5E3258E335700B78E6F /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D24E5CE258E315600B78E6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D24E5D2258E31BA00B78E6F /* Storyboards */,
+				4D24E5BD258E2DB600B78E6F /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D24E5CF258E316200B78E6F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D24E5D0258E316800B78E6F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4D24E5D1258E317400B78E6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D24E5B4258E2DB600B78E6F /* AppDelegate.swift */,
+				4D24E5B6258E2DB600B78E6F /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4D24E5D2258E31BA00B78E6F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4D24E5BA258E2DB600B78E6F /* Main.storyboard */,
+				4D24E5BF258E2DB600B78E6F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D24E5B9258E2DB600B78E6F /* ViewController.swift in Sources */,
+				4D24E5B9258E2DB600B78E6F /* ConversationsViewController.swift in Sources */,
 				4D24E5B5258E2DB600B78E6F /* AppDelegate.swift in Sources */,
+				4D24E5E4258E335700B78E6F /* ProfileViewController.swift in Sources */,
 				4D24E5B7258E2DB600B78E6F /* SceneDelegate.swift in Sources */,
+				4D24E5DB258E330E00B78E6F /* PhotoViewerViewController.swift in Sources */,
+				4D24E5D8258E32DD00B78E6F /* RegisterViewController.swift in Sources */,
+				4D24E5DE258E331600B78E6F /* VideoPlayerViewController.swift in Sources */,
+				4D24E5E1258E334500B78E6F /* NewConversationViewController.swift in Sources */,
+				4D24E5D5258E32CD00B78E6F /* LoginViewController.swift in Sources */,
 				4D24E5CB258E2F9400B78E6F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
