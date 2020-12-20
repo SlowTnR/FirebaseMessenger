@@ -83,13 +83,13 @@
 		4D24E5B3258E2DB600B78E6F /* FirebaseMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				4D24E5C2258E2DB600B78E6F /* Info.plist */,
 				4D24E5D1258E317400B78E6F /* Resources */,
 				4D24E5D0258E316800B78E6F /* ViewModels */,
 				4D24E5CF258E316200B78E6F /* Models */,
 				4D24E5CE258E315600B78E6F /* Views */,
 				4D24E5CD258E314C00B78E6F /* Controllers */,
 				4D24E5C9258E2F3000B78E6F /* Utils */,
-				4D24E5C2258E2DB600B78E6F /* Info.plist */,
 			);
 			path = FirebaseMessenger;
 			sourceTree = "<group>";

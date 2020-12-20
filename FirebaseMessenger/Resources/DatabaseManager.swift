@@ -8,7 +8,6 @@
 import Foundation
 import FirebaseDatabase
 
-// TODO SOME TESTT
 
 
 final class DatabaseManager {
@@ -18,7 +17,7 @@ final class DatabaseManager {
     private let database = Database.database().reference()
 }
 
-// MARK: / Account Management
+// MARK: - Account Management
 
 extension DatabaseManager {
     
@@ -69,3 +68,5 @@ struct ChatAppUser {
     //    let profilePictureUrl: String
     
 }
+
+
