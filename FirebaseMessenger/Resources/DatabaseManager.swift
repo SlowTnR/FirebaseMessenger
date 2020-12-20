@@ -8,6 +8,9 @@
 import Foundation
 import FirebaseDatabase
 
+// TODO SOME TESTT
+
+
 final class DatabaseManager {
     
     static let shared = DatabaseManager()
