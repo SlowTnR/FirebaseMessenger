@@ -23,6 +23,7 @@
 		4D24E5EB258E40EE00B78E6F /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E5EA258E40EE00B78E6F /* Extentions.swift */; };
 		4D24E5FF258E638100B78E6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D24E5FE258E638100B78E6F /* GoogleService-Info.plist */; };
 		4D24E603258E6EA500B78E6F /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24E602258E6EA500B78E6F /* DatabaseManager.swift */; };
+		4DB1C85A258F8E090048A80B /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1C859258F8E090048A80B /* Hello.swift */; };
 		683A893FA2887ED3CC98F16C /* Pods_FirebaseMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00F55D375ACEDEF43A8B498 /* Pods_FirebaseMessenger.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		4D24E5EA258E40EE00B78E6F /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		4D24E5FE258E638100B78E6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D24E602258E6EA500B78E6F /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		4DB1C859258F8E090048A80B /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
 		4DC88845A57410C052194469 /* Pods-FirebaseMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseMessenger.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseMessenger/Pods-FirebaseMessenger.debug.xcconfig"; sourceTree = "<group>"; };
 		E00F55D375ACEDEF43A8B498 /* Pods_FirebaseMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 			children = (
 				4D24E5FE258E638100B78E6F /* GoogleService-Info.plist */,
 				4D24E5CA258E2F9400B78E6F /* Constants.swift */,
+				4DB1C859258F8E090048A80B /* Hello.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				4D24E5B7258E2DB600B78E6F /* SceneDelegate.swift in Sources */,
 				4D24E5DB258E330E00B78E6F /* PhotoViewerViewController.swift in Sources */,
 				4D24E5D8258E32DD00B78E6F /* RegisterViewController.swift in Sources */,
+				4DB1C85A258F8E090048A80B /* Hello.swift in Sources */,
 				4D24E5DE258E331600B78E6F /* VideoPlayerViewController.swift in Sources */,
 				4D24E603258E6EA500B78E6F /* DatabaseManager.swift in Sources */,
 				4D24E5E1258E334500B78E6F /* NewConversationViewController.swift in Sources */,
