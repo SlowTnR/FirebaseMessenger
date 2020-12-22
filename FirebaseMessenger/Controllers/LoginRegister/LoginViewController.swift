@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import FBSDKLoginKit
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
@@ -77,15 +78,32 @@ class LoginViewController: UIViewController {
         return button
     }()
     
-    private let FbLoginButton: FBLoginButton = {
+    private let fbLoginButton: FBLoginButton = {
         let button = FBLoginButton()
         button.permissions = ["email,public_profile"]
         
         return button
     }()
     
+    private let googleLoginButton: GIDSignInButton = {
+       
+        let button = GIDSignInButton()
+        
+        return button
+    }()
+    
+    private var loginObserver: NSObjectProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginObserver = NotificationCenter.default.addObserver(forName: .didLogInNotification, object: nil, queue: .main, using: {[weak self] _ in
+            guard let strongSelf = self else {return}
+            strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+        })
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        
         title = "Log In"
         view.backgroundColor = .white
         
@@ -98,7 +116,7 @@ class LoginViewController: UIViewController {
         emailField.delegate = self
         passwordField.delegate = self
         
-        FbLoginButton.delegate = self
+        fbLoginButton.delegate = self
         
         // Add subviews
         
@@ -107,8 +125,15 @@ class LoginViewController: UIViewController {
         scrollView.addSubview(emailField)
         scrollView.addSubview(passwordField)
         scrollView.addSubview(loginButton)
-        scrollView.addSubview(FbLoginButton)
+        scrollView.addSubview(fbLoginButton)
+        scrollView.addSubview(googleLoginButton)
         
+    }
+    
+    deinit {
+        if let observer = loginObserver {
+            NotificationCenter.default.removeObserver(observer)
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -123,8 +148,9 @@ class LoginViewController: UIViewController {
         
         loginButton.frame = CGRect(x: 30, y: passwordField.bottom + 10, width: scrollView.width - 60, height: 52)
         
-        FbLoginButton.center = scrollView.center
-        FbLoginButton.frame = CGRect(x: 30, y: loginButton.bottom + 10, width: scrollView.width - 60, height: 52)
+        
+        fbLoginButton.frame = CGRect(x: 30, y: loginButton.bottom + 10, width: scrollView.width - 60, height: 52)
+        googleLoginButton.frame = CGRect(x: 30, y: fbLoginButton.bottom + 10, width: scrollView.width - 60, height: 52)
         
         
     }
